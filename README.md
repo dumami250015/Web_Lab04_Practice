@@ -13,7 +13,8 @@
 7.  **Resource Cleanup:** The `finally` block closes the `ResultSet`, `Statement`, and `Connection`.
 8.  **Client Response:** Tomcat sends the complete HTML page with the student table to the browser.
 
-   <img width="1300" height="411" alt="image" src="https://github.com/user-attachments/assets/6f2f68e9-cff8-49fe-8e13-a77875113185" />
+
+    <img width="1300" height="411" alt="image" src="https://github.com/user-attachments/assets/6f2f68e9-cff8-49fe-8e13-a77875113185" />
 
 ---
 
@@ -28,9 +29,12 @@
     * On success, it redirects (`response.sendRedirect`) to `list_students.jsp?message=...`.
     * On error (like a duplicate code), it redirects back to `add_student.jsp?error=...`.
 7.  **Client Response:** The browser receives the redirect and makes a new `GET` request to `list_students.jsp`, showing the updated list.
+
+
     <img width="1297" height="620" alt="image" src="https://github.com/user-attachments/assets/54388381-f19d-4b4d-a777-ba66fc6d6a1d" />
+
   
-   <img width="1300" height="530" alt="image" src="https://github.com/user-attachments/assets/50da4508-f143-4d75-a498-6d3076a6f90e" />
+    <img width="1300" height="530" alt="image" src="https://github.com/user-attachments/assets/50da4508-f143-4d75-a498-6d3076a6f90e" />
 
 ---
 
@@ -46,7 +50,10 @@
     * On failure, redirects back to `edit_student.jsp?id=X&error=...`.
 7.  **Client Response:** The client reloads the main list page, showing the updated data.
 
+
     <img width="1297" height="617" alt="image" src="https://github.com/user-attachments/assets/ffd720a7-823e-47f7-b578-602740dc7d33" />
+
+    
     <img width="1306" height="541" alt="image" src="https://github.com/user-attachments/assets/6005b2d6-d178-44fa-88e1-e70ad7a850ac" />
 
 ---
@@ -61,5 +68,8 @@
     * On failure (ID not found or `SQLException`), redirects to `list_students.jsp?error=...`.
 5.  **Client Response:** The client loads the list page, showing the final data.
 
+
     <img width="440" height="116" alt="image" src="https://github.com/user-attachments/assets/0cda1eba-4f94-4dae-9d36-10dbea086af9" />
+
+    
     <img width="1300" height="486" alt="image" src="https://github.com/user-attachments/assets/9e1e6f88-4c41-4727-b920-5d0ee6bb33d1" />
